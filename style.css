@@ -1,0 +1,25 @@
+body {
+    background-color: rgb(129, 231, 228);
+     text-align: center;
+     padding: 222px;
+    
+
+}
+
+.container {
+    color:black;
+    text-align: center;
+}
+
+.navbar-brand {
+    color:black;
+    text-decoration: none;
+}
+#content {
+    color:black;
+    text-align: center;
+}
+
+.card-title {
+    text-align: center;
+}
