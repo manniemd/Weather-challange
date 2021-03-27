@@ -1,6 +1,6 @@
 class Fetch {
   async getCurrent(input) {
-    const myKey = "39a9a737b07b4b703e3d1cd1e231eedc";
+      const myKey = "bc1932a860e4325ff6590d5142f62e5a";
 
     //make request to url
 
@@ -9,18 +9,36 @@ class Fetch {
     );
 
     const data = await response.json();
-
+    //return zip code out of data
     console.log(data);
 
     return data;
   }
+
 }
+class Fetch2 {
+    async getCurrent(input) {
+        const myKey = "bc1932a860e4325ff6590d5142f62e5a";
+
+        //make request to url
+
+        const response = await fetch(
+            `https://api.openweathermap.org/data/2.5/forecast/daily?q=${input}&appid=${myKey}`
+        );
+
+        const data = await response.json();
+
+        console.log(data);
+
+        return data;
+    }}
+
 //ui starts but can be split
 class UI {
     constructor() {
         this.uiContainer = document.getElementById("content");
         this.city;
-        this.defaultCity = "London";
+        this.defaultCity = "Nashville";
     }
 
     populateUI(data) {
@@ -33,7 +51,8 @@ class UI {
         <div class="card mx-auto mt-5" style="width: 18rem;">
             <div class="card-body justify-content-center">
                 <h5 class="card-title">${data.name}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Highs of ${data.main.temp_max}. Lows of ${data.main.temp_min}</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Highs of ${data.main.temp_max}</h6>
+                <h6 class="card-subtitle mb-2 text-muted">Lows of ${data.main.temp_min}</h6>
                 <p class="card-text ">Weather conditions are described as: ${data.weather[0].description}</p>
                 
             </div>
