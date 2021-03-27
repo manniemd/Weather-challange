@@ -1,1 +1,0 @@
-my Weather is created to give you a quick glance at the weather before you get out the door 
