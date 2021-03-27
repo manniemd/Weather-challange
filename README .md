@@ -6,3 +6,4 @@ My Weather is created to give you a quick glance at the weather before you get o
  *java
  ## Contribution
   Made by: Manuel M Duron with :heart:
+  <img width="1148" alt="Screen Shot 2021-03-27 at 6 48 25 PM" src="https://user-images.githubusercontent.com/76885757/112736964-26ab6880-8f2d-11eb-895d-779deb8ad7b9.png">
