@@ -1,25 +1,81 @@
-body {
-    background-color: rgb(129, 231, 228);
-     text-align: center;
-     padding: 222px;
+ *{
+    box-sizing: border-box;
+  }
+  
+
+.jumbotron{
+  text-align: center;
+  background-image: url(../Images/noaa-Y7GUOQ83OMg-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(255, 255, 255); 
+  padding: 18px ;
+  margin: 0px 0px 15px;
+}
+
+.lead,#listCity,form h3,#tittle5,.currentStyle{
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   color: rgb(11, 11, 11); 
+}
+
+ 
+.justify-space-around {
+    justify-content: space-between;
+  }
+
+  /* display style for current weather day (temperature,humidy,speed wind and UV )*/
+  .card {
+    padding: 30px 20px ;
+  }
+  .card p {
+  font-size:25px ;
+  }
+ /* display style for current weather day (name city,date )*/
+ .currentStyle{
+   font-size: 30px;   
+   font-weight: bold;
+  
+ }
+ 
+ .currentStyle P{
+   font-size: 25px;
+ }
+
+ form h3{
+  font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: rgba(0, 0, 0, 0.879); 
+ }
+ .input{
+   width: 40px;
+ }
+ /* display style for 5 day forecast (temp and humidity )*/
+ .dateForecast{
+   text-align: center;
+ }
+  .forecast p{
+    font-size: 22px;
+    text-align:center;
+  }
+  .forecast{
+    border-radius: 5px;
+    padding-bottom: 15px;
+    background-image: url(../Images/wolfgang-hasselmann-bR_-gllg7Bs-unsplash.jpg);
     
+  }
+  #weather-container{    
+    background-image: url(../Images/daniel-ramirez-q4TfWtnz_xw-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #allday{
+    padding-bottom: 20px;
+  }
 
-}
-
-.container {
-    color:black;
-    text-align: center;
-}
-
-.navbar-brand {
-    color:black;
-    text-decoration: none;
-}
-#content {
-    color:black;
-    text-align: center;
-}
-
-.card-title {
-    text-align: center;
-}
+  /* image style*/
+  .imgDisplay{
+    display: block ;
+    margin-left: auto; 
+    margin-right: auto
+  }

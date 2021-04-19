@@ -1,53 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link
-    rel="stylesheet"
-   href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/minty/bootstrap.min.css"
-  
-  />
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.css">
-    </head>
-    <title>My weather </title>
-  </head>
-  <body>
-    <body>
-        <nav class="Hero">
-            <div class="container">
-                <a href="#" class="navbar-brand">My weather</a>
-            </div>
-        </nav>
-        <div class="container searchContainer">
-            <div class="search card card-body">
-                <h1>Get The Weather For Your Location</h1>
-                <p class="lead">Submit Your Location</p>
-                <input type="text" id="searchUser" class="form-control" placeholder="City">
-            </div>
-            <br>
-            <div id="profile"></div>
-        </div>
-        <div class="container text-center mt-2">
-            <button class="btn btn-primary" id="submit">Submit</button>
-        </div>
-        
-        <div id="content">
-        
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>My Weather</title>
+</head>
+
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3  lead">My Weather</h1>
+  </header>
+
+  <main class=" container-fluid flex-row ">
+    <div class="row ">
+      <div class=" col-12  col-md-3 ">
+        <form id="city-form">
+          <div class="form-group">
+            <h3 for="searchCity">City:</h3>
+            <input id="city" type="text">
+            <button id="searchC" type="submit" class="btn btn-primary"><span
+                class="oi oi-magnifying-glass"></span></button>
+          </div>
+        </form>
+        <div>
+          <ul id="listCity" class="list-group">
+          </ul>
         </div>
-        <div id="content2">
-            <div class="card-body justify-content-center">
-                <h5 class="card-title">${data.name}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">Highs of ${data.main.temp_max}</h6>
-                <h6 class="card-subtitle mb-2 text-muted">Lows of ${data.main.temp_min}</h6>
-                <p class="card-text ">Weather conditions are described as: ${data.weather[0].description}</p>
+      </div> 
+
+      <div class=" col-12  col-md-9 ">
+        <div id="totalInfo ">
+          <h2 class="subtitle"><span id="showCurrentWeather"></span></h2>
+          <div id="weather-container" class="infoW"></div>
         </div>
-        <footer class="mt-5 p-3 text-center bg-light container">
-             How's your weather &copy;
-        </footer>
-  </body>
-  <script src="./assets/fetch.js"></script>
-  
-  
+        <!--5 day-->
+        <div>
+          <h2 id="tittle5"></h2>
+          <div id="forecast">
+            <div id="allday" class="row ">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="./assets/fetch.js"> </script>
+</body>
+
 </html>
