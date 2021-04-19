@@ -1,4 +1,4 @@
-*My Weather 
+#My Weather 
 My Weather is created to give you a quick glance at the weather before you get out the door.
 #follow the links to access 
 https://manniemd.github.io/Weather-challange/
